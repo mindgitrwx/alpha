@@ -419,60 +419,11 @@ const questions                 = {
     type     : RTypes.MEDIA,
     answers  : [
       {
-        nextId: 'recursion2',
-      },
-    ],
-  },
-  recursion2: {
-    botPrompt: "You're really a no-nonsense kind of type, huh?",
-    answers  : [
-      {
-        nextId: 'recursion3',
-      },
-    ],
-  },
-  recursion3: {
-    botPrompt: "You know what else isn't any fun <strong>@varName</strong>?",
-    type     : RTypes.TRANSFORMED_TEXT,
-    varName  : 'userName',
-    answers  : [
-      {
-        nextId: 'recursion4',
-      },
-    ],
-  },
-  recursion4: {
-    botPrompt: 'Recursion.',
-    input    : selectField(['What?', 'Yes', 'No', 'Stop It']),
-    answers  : [
-      {
-        answer: 'What?',
-        nextId: 'recursion3',
-      },
-      {
-        answer: 'Yes',
-        nextId: 'recursion3',
-      },
-      {
-        answer: 'No',
-        nextId: 'recursion3',
-      },
-      {
-        answer: 'Stop It',
-        nextId: 'sorry',
-      },
-    ],
-  },
-  sorry: {
-    botPrompt         : 'https://image.freepik.com/free-vector/employees-giving-hands-helping-colleagues-walk-upstairs_74855-5236.jpg',
-    type              : RTypes.MEDIA,
-    finishConversation: true,
-    answers           : [
-      {
         nextId: 'check_out1',
       },
     ],
   },
+  
   check_out1: {
     botPrompt: '여러분과 함께 개발하며 진행해가는 Pre alpha version 의 챗봇입니다. 방금 입력하신 코드에는 AI가 적용되어 다소 시간이 걸렸습니다. 오픈소스에 참여해서 모두가 즐겁게 사용 가능한 국군을 위한 챗봇을 만들어 봐요!',
     answers  : [
